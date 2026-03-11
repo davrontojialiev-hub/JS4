@@ -9,7 +9,10 @@ console.log(user(name, year, nowYear));
 
 
 let numExample = +prompt("Ведите кол-во примеров");
+
 function randomExample() {
+
+for (let i = 0; i < numExample; i++) {
     let num1 = Math.round(Math.random() * 100);
     let num2 = Math.round(Math.random() * 100);
     let operators = ["+", "-", "*", "/"];
@@ -22,10 +25,10 @@ function randomExample() {
     } else if (operator === "*") {
         ans = num1 * num2;
     }
-    else (operator === "/") {
+    else if (operator === "/") {
         ans = num1 / num2;
     }
-}
+
 
     let userAnswer = +prompt(num1 + " " + operator + " " + num2);
     if (userAnswer == ans) {
@@ -33,7 +36,6 @@ function randomExample() {
     } else {
         alert("Ваш ответ не верный - " + userAnswer + ". Правильный ответ: " + ans);
     }
-
-for (let i = 0; i < numExample; i++) {
-    randomExample();
 }
+}
+randomExample();
