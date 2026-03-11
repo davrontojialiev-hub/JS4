@@ -1,6 +1,6 @@
-let name = prompt("Ведите ваше имя?");
-let nowYear = +prompt("Ведите текущий год?");
-let year = +prompt("Ведите ваш год рождения?");
+let name = prompt("Ведите ваше имя");
+let nowYear = +prompt("Ведите текущий год");
+let year = +prompt("Ведите ваш год рождения");
 function user(name, year, nowYear) {
     return name + ", Ваш возраст " + (nowYear - year);
 }
